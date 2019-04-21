@@ -1,0 +1,18 @@
+group 'study'
+version '1.0'
+
+apply plugin: 'scala'
+
+repositories {
+
+    maven { url = 'http://maven.aliyun.com/nexus/content/groups/public/' }
+    mavenCentral()
+}
+
+dependencies {
+
+    compile 'org.scala-lang:scala-library:2.12.8'
+    testCompile 'org.scalatest:scalatest_2.12:3.0.7'
+    compile group: 'io.netty', name: 'netty-all', version: '4.1.35.Final'
+
+}
